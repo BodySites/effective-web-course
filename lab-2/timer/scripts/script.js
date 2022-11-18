@@ -22,6 +22,8 @@ document.addEventListener('click', (event) => {
       }
    } else if (event.target.classList.contains('start')) {
       if (stateTimer === 'inactive') {
+         if (min.value === '') min.value = 0
+         if (sec.value === '') sec.value = 0
          if (validTime(min.value, sec.value)) {
             time = parseInt(min.value) * 60 + parseInt(sec.value)
             stateTimer = 'active'
