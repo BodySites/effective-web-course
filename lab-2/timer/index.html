@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap');
+   </style>
+   <link rel="stylesheet" href="styles/Null.css">
+   <link rel="stylesheet" href="styles/style.css">
+   <title>Timer</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="text">Таймер</div>
+      <div class="time">
+         <button class="time-btn" data-time="60">1 минута</button>
+         <button class="time-btn" data-time="300">5 минут</button>
+         <button class="time-btn" data-time="600">10 минут</button><br>
+         <input type="number" class="time-min" placeholder="Минут">
+         <span>:</span>
+         <input type="number" class="time-sec" placeholder="Секунд">
+      </div>
+      <div class="buttons">
+         <button class="start">Старт</button>
+         <button class="stop">Стоп</button>
+         <button class="reset">Сбросить</button>
+      </div>
+   </div>
+
+   <script src="scripts/script.js"></script>
+</body>
+
+</html>

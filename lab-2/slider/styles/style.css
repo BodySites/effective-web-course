@@ -1,0 +1,56 @@
+.wrapper {
+   width: 100vw;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.slides {
+   height: 100%;
+   width: 100%;
+   position: relative;
+}
+
+.slides>img {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   transition: left 0.5s ease-in-out;
+}
+
+button {
+   position: fixed;
+   top: 50%;
+   transform: translate(0, -50%);
+   width: 70px;
+   height: 150px;
+   opacity: 0.8;
+   border-radius: 10px;
+   background-color: rgb(144, 144, 144);
+   text-align: center;
+}
+
+button:hover {
+   background-color: rgb(91, 91, 91);
+}
+
+button:active {
+   background-color: rgb(133, 133, 131);
+   opacity: 1;
+}
+
+button>img {
+   width: 45px;
+   height: 30px;
+}
+
+.button-left {
+   left: -10px;
+}
+
+.button-right {
+   right: -10px;
+}
+
+.button-right>img {
+   transform: rotate(180deg);
+}

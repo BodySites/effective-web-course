@@ -1,0 +1,84 @@
+body {
+   font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+
+.text {
+   margin-top: 30vh;
+   margin-bottom: 20px;
+   font-size: 32px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.time {
+   width: 495px;
+   margin: auto;
+}
+
+.time-btn {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   background-color: rgb(51, 218, 218);
+   text-align: center;
+   font-size: 18px;
+   box-shadow: 1px 1px 5px black;
+   margin-right: 10px;
+   margin-bottom: 20px;
+}
+
+.time-btn:hover {
+   background-color: rgba(102, 186, 212, 0.69);
+}
+
+.time-btn:active {
+   background-color: rgba(255, 0, 0, 0.579);
+}
+
+.time>input {
+   width: 230px;
+   height: 40px;
+   border: 1px solid rgba(114, 114, 114, 0.679);
+   border-radius: 30px;
+   background-color: rgb(242, 244, 246);
+   font-size: 20px;
+   text-align: center;
+   box-shadow: inset 1px 1px 5px rgb(154, 154, 154);
+   margin: 0 3px 20px;
+   padding: 5px 10px;
+}
+
+.time>input:focus {
+   box-shadow: inset 1px 1px 7px 2px rgb(154, 154, 154);
+}
+
+.buttons {
+   width: 495px;
+   margin: auto;
+   margin-bottom: 50px;
+}
+
+.buttons>button {
+   width: 150px;
+   height: 50px;
+   border-radius: 20px;
+   background-color: rgb(44, 247, 75);
+   text-align: center;
+   font-size: 18px;
+   box-shadow: 1px 1px 5px black;
+   margin-right: 10px;
+}
+
+.buttons>button:hover {
+   background-color: rgba(66, 242, 81, 0.69);
+}
+
+.buttons>button:active {
+   background-color: rgba(255, 0, 0, 0.579);
+}
