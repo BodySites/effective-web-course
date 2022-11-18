@@ -7,8 +7,8 @@ let activeSlideIndex
 
 let timeChange = 0
 
-window.addEventListener('load', () => {
-   activeSlideIndex = parseInt(localStorage.getItem('activeSlide')) ?? 0
+window.addEventListener('DOMContentLoaded', () => {
+   activeSlideIndex = (parseInt(localStorage.getItem('activeSlide'))) ? parseInt(localStorage.getItem('activeSlide')) : 0
    slides.forEach((slide, key) => {
       slide.style.left = `calc(100vw*${key - activeSlideIndex})`
    })
