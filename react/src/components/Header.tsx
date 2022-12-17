@@ -1,13 +1,14 @@
 import { FC } from "react";
 import { useLocation } from "react-router-dom";
 import stylesHeader from "../styles/Components/Header.module.css";
+import marvelLogo from "../../public/marvel_logo.svg";
 
 const Header: FC = () => {
   const activePage: string = useLocation().pathname;
 
   return (
     <div className={stylesHeader.header}>
-      <img src="public/marvel_logo.svg" alt="Marvel logo" />
+      <img src={marvelLogo} alt="Marvel logo" />
       <div className={stylesHeader.navbar}>
         <a
           href="/characters"
