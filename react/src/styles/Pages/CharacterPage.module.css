@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page > img {
+  height: 400px;
+  width: 350px;
+}
+
+.data {
+  display: inline-block;
+  flex: 1 1 33%;
+  padding: 20px 40px 25px 25px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.list {
+  color: rgb(0, 158, 182);
+  font-size: 20px;
+}
+
+.list > li > a {
+  margin-bottom: 6px;
+}
+
+.list > li > a:hover {
+  text-decoration: underline;
+  color: rgb(87, 219, 255);
+}
