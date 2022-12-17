@@ -1,0 +1,39 @@
+.header {
+  background-color: red;
+  height: 100px;
+  box-shadow: 1px 1px 5px gray;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-self: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.header > img {
+  height: 60px;
+}
+
+.navbar {
+  display: inline-block;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-self: center;
+  flex-wrap: nowrap;
+}
+
+.a {
+  display: inline-block;
+  font-size: 20px;
+  color: rgb(255, 200, 0);
+}
+
+.a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: rgb(229, 234, 239);
+  font-size: 20px;
+}
