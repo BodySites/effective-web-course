@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { useParams } from "react-router-dom";
-import styles from "../styles/Pages/CharacterPage.module.css";
+import styles from "../styles/Pages/DetailPage.module.css";
 import characters from "../mocks/charactersMock";
 import NotFound from "./NotFound";
 import cardType from "../types/cardType";
