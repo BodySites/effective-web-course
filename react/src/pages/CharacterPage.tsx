@@ -3,11 +3,11 @@ import { useParams } from "react-router-dom";
 import styles from "../styles/Pages/DetailPage.module.css";
 import characters from "../mocks/charactersMock";
 import NotFound from "./NotFound";
-import cardType from "../types/cardType";
+import { characterType } from "../types/characterType";
 
 const CharacterPage: FC = () => {
-  const id = useParams().id;
-  let characterItem: cardType | null = null;
+  const id = useParams()?.id;
+  let characterItem: characterType | undefined;
 
   characters.forEach((character) => {
     if (character.id.toString() === id) {
@@ -25,11 +25,23 @@ const CharacterPage: FC = () => {
       </div>
       <div className={styles.data}>
         <div className={styles.title}>Comics</div>
-        <ul className={styles.list}></ul>
+        <ul className={styles.list}>
+          {characterItem["comics"].map((comic) => (
+            <li>
+              <a href={"/comics/" + comic.id}>{comic.name}</a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className={styles.data}>
         <div className={styles.title}>Series</div>
-        <ul className={styles.list}></ul>
+        <ul className={styles.list}>
+          {characterItem["series"].map((serial) => (
+            <li>
+              <a href={"/series/" + serial.id}>{serial.name}</a>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   ) : (
