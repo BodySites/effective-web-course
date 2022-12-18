@@ -32,12 +32,15 @@
 }
 
 .list {
-  color: rgb(0, 158, 182);
   font-size: 20px;
 }
 
-.list > li > a {
+.list > li {
   margin-bottom: 6px;
+}
+
+.list > li > a {
+  color: rgb(0, 167, 244);
 }
 
 .list > li > a:hover {
