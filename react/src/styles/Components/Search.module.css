@@ -1,0 +1,52 @@
+.search {
+  margin-bottom: 40px;
+}
+
+.search > div {
+  margin-bottom: 10px;
+}
+
+.type {
+  font-size: 40px;
+  font-weight: 900;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.length {
+  color: gray;
+  font-size: 22px;
+}
+
+.line {
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.line > input {
+  height: 100%;
+  border: 2px solid gray;
+  flex: 1 1 400px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.line > input:focus {
+  box-shadow: 1px 1px 5px gray;
+}
+
+.line > button {
+  height: 100%;
+  flex: 0 1 300px;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.line > button:active {
+  background-color: bisque;
+}

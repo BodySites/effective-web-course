@@ -1,0 +1,26 @@
+.footer {
+  background-color: rgb(68, 75, 77);
+  height: 200px;
+  box-shadow: 1px 1px 5px gray;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.797);
+}
+
+.footer > img {
+  height: 90px;
+  position: relative;
+  left: -5px;
+  margin-bottom: 10px;
+}
+
+.footer > div {
+  margin-bottom: 10px;
+}
+
+.footer > a {
+  color: rgba(255, 255, 255, 0.797);
+}
+
+.footer > a:hover {
+  text-decoration: underline;
+}

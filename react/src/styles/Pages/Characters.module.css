@@ -1,0 +1,14 @@
+.page {
+  padding: 40px;
+}
+
+.characters {
+  padding-top: 40px;
+  border-top: 1px solid rgba(128, 128, 128, 0.442);
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  justify-content: center;
+  column-gap: 47px;
+  row-gap: 20px;
+}
