@@ -1,4 +1,4 @@
-import { RouteObject } from "react-router-dom";
+import { Navigate, RouteObject } from "react-router-dom";
 import CharacterPage from "./pages/CharacterPage";
 import Characters from "./pages/Characters";
 import ComicPage from "./pages/ComicPage";
@@ -8,6 +8,10 @@ import SerialPage from "./pages/SerialPage";
 import Series from "./pages/Series";
 
 const router: RouteObject[] = [
+  {
+    path: "/",
+    element: <Navigate to="/characters" />,
+  },
   {
     path: "/characters",
     element: <Characters />,

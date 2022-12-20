@@ -2,7 +2,7 @@ import stylesFooter from "../styles/Components/Footer.module.css";
 import marvelLogo from "../../public/marvel_logo.svg";
 
 export default function Footer() {
-  const year: number = new Date().getUTCFullYear();
+  const year = new Date().getUTCFullYear();
   return (
     <div className={stylesFooter.footer}>
       <img src={marvelLogo} alt="Marvel logo" />
